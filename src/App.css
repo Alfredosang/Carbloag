@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(222, 170, 90); */
+  /* background-color: rgba(255, 83, 3, 0.718); */
+  background-color: rgb(31, 28, 28);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.theme{
+  color: rgb(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
+  display: flex;
+  
+  text-decoration: none;
+  list-style-type: none;
+}
+li{
+  margin-left: 20px;
+}
+
+.hero{
+  height: 100vh;
+  /* display: flex; */
+  /* background-image:linear-gradient(rgba(255, 83, 3, 0.718),rgba(0, 0, 0, 0.625)), url(./assets/heropic.jpg); */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.908),rgba(0, 0, 0, 0.572)), url(./assets/heropic.jpg);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  color: aliceblue;
+
+}
+
+.nav{
+  padding: 70px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+  
+}
+
+.logo{
+  font-size: 25px;
+  font-weight: 700;
+}
+.hero-text{
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 10rem;
+}
+
+.blog-pic{
+  width: 400px;
+  height: 250px;
+  background-size: cover;
+  background-position: top;
+}
+
+.blog-card{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  color: antiquewhite;
+  
+  /* margin-bottom: 20px; */
+}
+
+.blog-layout{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.blog-text{
+  padding:30px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-section{
+  height: 50vh;
+  background-image:linear-gradient(rgba(10, 5, 2, 0.718),rgba(0, 0, 0, 0.865)), url(./assets/heropic.jpg);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  
+
 }
