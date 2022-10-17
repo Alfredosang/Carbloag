@@ -4,8 +4,8 @@ import ReactPlayer from 'react-player'
 
 const Youtube = () => {
     return (
-        <div className='container   mx-auto '>
-            <div className='h-[1000px] flex flex-col md:flex-row justify-center space-x-5 items-center'>
+        <div className='bg-black flex flex-col items-center mx-auto '>
+            <div className='mt-16 h-[1000px] md:h-[500px] flex flex-col md:flex-row justify-center space-x-5 items-center'>
                 <div>
                     <img src={pictwo} alt="car" className='h-[500px] w-[700px] object-cover object-center shadow-lg shadow-black' />
                 </div>
@@ -24,15 +24,15 @@ const Youtube = () => {
 
             </div>
 
-            <div className='flex flex-wrap gap-3 justify-center items-center w-full md:h-[500px] h-[700px] my-5 mx-auto'>
+            <div className='flex flex-wrap gap-3 justify-center items-center w-full md:h-[500px] h-[700px] mb-5 md:mb-0 mx-auto'>
                 <div className=' shadow-lg shadow-black  '>
-                    <ReactPlayer url='https://www.youtube.com/watch?v=aQmCd2QUHsg'height='200px' width='350px'/>
+                    <ReactPlayer url='https://www.youtube.com/watch?v=aQmCd2QUHsg'height='250px' width='500px'/>
                 </div>
                 <div className=' shadow-lg shadow-black'>
-                    <ReactPlayer url='https://www.youtube.com/watch?v=xxMxhpdUA04'height='200px' width='350px'/>
+                    <ReactPlayer url='https://www.youtube.com/watch?v=xxMxhpdUA04'height='250px' width='500px'/>
                 </div>
                 <div className=' shadow-lg shadow-black'>
-                    <ReactPlayer url='https://www.youtube.com/watch?v=R_mwYj49myc'height='200px' width='350px'/>
+                    <ReactPlayer url='https://www.youtube.com/watch?v=R_mwYj49myc'height='250px' width='500px'/>
                 </div>
             </div>
 

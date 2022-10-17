@@ -1,9 +1,11 @@
 import React from 'react'
 import Blogpost from '../Blogpost'
 import Hero from '../Hero'
-import Services from '../Services'
+import Gallery from '../Gallery'
 import Youtube from '../Youtube'
 import Parallax from '../Parallaxdemo'
+import Team from '../Team'
+import Contact from '../Contact'
 
 const Homepage = () => {
   return (
@@ -11,9 +13,11 @@ const Homepage = () => {
         <Hero />
         <Blogpost />
         <Youtube />
-        <Services />
+        <Gallery />
+        <Team />
         <Parallax />
         <Blogpost />
+        <Contact />
     </div>
   )
 }

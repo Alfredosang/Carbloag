@@ -15,9 +15,9 @@ function Hero() {
                         </div>
                         <div >
                             <div className='hidden md:flex'>
-                                <button className='px-7 py-2 mr-2 font-bold  border-2 border-white  text-black bg-white/70 rounded-full hover:bg-theme hover:text-white duration-200'>Home</button>
-                                <button className='px-7 py-2 mr-2 font-bold  border-2 border-white  text-black bg-white/70 rounded-full hover:bg-theme hover:text-white duration-200'>Home</button>
-                                <button className='px-7 py-2 mr-2 font-bold  border-2 border-white  text-black bg-white/70 rounded-full hover:bg-theme hover:text-white duration-200'>Home</button>
+                                <button className='px-7 py-2 mr-2   border-2 border-white  hover:text-black hover:bg-white/90 rounded-full bg-theme text-white duration-200'>Gallery</button>
+                                <button className='px-7 py-2 mr-2   border-2 border-white  hover:text-black hover:bg-white/90 rounded-full bg-theme text-white duration-200'>Blog</button>
+                                <button className='px-7 py-2 mr-2   border-2 border-white  hover:text-black hover:bg-white/90 rounded-full bg-theme text-white duration-200'>Contact</button>
                                 
                                 
                             </div>
@@ -28,9 +28,9 @@ function Hero() {
                     </div>
                     <div className='hero-text flex flex-col justify-center '>
                     
-                        <h1 className='flex text-center justify-center ml-5 mr-5 text-[3rem] md:text-[7rem]'>You Dream It,</h1>
+                        <h1 className='flex text-center justify-center ml-5 mr-5 text-[3rem] md:text-[7rem]'>You Like It ?</h1>
                         <h1 className='flex text-center text-theme justify-center ml-5 mr-5 text-[2rem] md:text-[5rem]'>
-                        <Typical steps={['We Design It', 2000, 'We Build It', 2000]} loop={Infinity} wrapper="p" />
+                        <Typical steps={['You place an order', 2000, 'We deliver', 2000]} loop={Infinity} wrapper="p" />
                         </h1>
                         
 
