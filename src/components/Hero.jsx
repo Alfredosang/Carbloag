@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa';
-import Typical from 'react-typical'
+// import Typical from 'react-typical'
 
 function Hero() {
     return (
@@ -30,7 +30,8 @@ function Hero() {
                     
                         <h1 className='flex text-center justify-center ml-5 mr-5 text-[3rem] md:text-[7rem]'>You Like It ?</h1>
                         <h1 className='flex text-center text-theme justify-center ml-5 mr-5 text-[2rem] md:text-[5rem]'>
-                        <Typical steps={['You place an order', 2000, 'We deliver', 2000]} loop={Infinity} wrapper="p" />
+                            You order, we deliver
+                        {/* <Typical steps={['You place an order', 2000, 'We deliver', 2000]} loop={Infinity} wrapper="p" /> */}
                         </h1>
                         
 
