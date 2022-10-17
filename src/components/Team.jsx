@@ -60,7 +60,7 @@ const Team = () => {
             id: 3,
             pix: teampic,
             name: 'Linda Okafor',
-            position: 'Lead Mechanical Engineer'
+            position: 'Mechanical Engineer'
         },
         {
             id: 4,
