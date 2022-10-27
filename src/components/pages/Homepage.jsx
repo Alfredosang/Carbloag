@@ -7,16 +7,16 @@ import Parallax from '../Parallaxdemo'
 import Team from '../Team'
 import Contact from '../Contact'
 
-const Homepage = () => {
+const Homepage = ({post}) => {
   return (
     <div>
         <Hero />
-        <Blogpost />
+        <Blogpost post={post} />
         <Youtube />
         <Gallery />
         <Team />
         <Parallax />
-        <Blogpost />
+        <Blogpost post={post} />
         <Contact />
     </div>
   )
