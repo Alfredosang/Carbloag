@@ -1,17 +1,18 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-const Details = ({ post}) => {
+const Details = ({ post }) => {
     const { id } = useParams();
     return (
-        <div className='container  mx-auto'>
-        
-            <div className='flex justify-center w-[350px] md:w-[700px] lg:w-[900px] h-[700px] mx-auto mt-24'>
-                {
-                    post.filter(post => post.id === parseInt(id)).map((post) =>
+        <div >
+            <div className='container  mx-auto'>
 
-                    (
-                        
+                <div className='flex justify-center w-[350px] md:w-[700px] lg:w-[900px] h-[700px] mx-auto mt-24'>
+                    {
+                        post.filter(post => post.id === parseInt(id)).map((post) =>
+
+                        (
+
                             <div key={post.id} className='flex flex-col items-center space-y-5 '>
                                 <div>
                                     <img src={post.pix} className='w-[350px] md:w-[700px] lg:w-[900px]  object-cover object-center' alt='blog car' />
@@ -26,16 +27,17 @@ const Details = ({ post}) => {
                                 </div>
 
                             </div>
-                        
-                    )
+
+                        )
 
 
-                    )
-                }
+                        )
+                    }
+
+                </div>
+
 
             </div>
-
-
         </div>
     )
 }

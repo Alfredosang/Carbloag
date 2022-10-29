@@ -12,24 +12,14 @@ const Parallaxdemo = () => {
 
         <div className='container mx-auto '>
           <div className='m-16'>
-          <h1 className='text-2 md:text-4xl text-center font-bold text-white mt-10'>Sportty Time</h1>
+          <h1 className='text-2 md:text-4xl text-center font-bold text-white mt-10'>Automotive Performance</h1>
           <p className='flex justify-center  md:text-xl items-center text-white mt-5'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Qui adipisci, commodi fuga delectus ex rem nulla,
-            cupiditate corrupti eligendi, laudantium iste. Omnis
-            soluta consequatur sequi sint, quia enim obcaecati quibusdam.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Qui adipisci, commodi fuga delectus ex rem nulla,
-            cupiditate corrupti eligendi, laudantium iste. Omnis
-            soluta consequatur sequi sint, quia enim obcaecati quibusdam.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Qui adipisci, commodi fuga delectus ex rem nulla,
-            cupiditate corrupti eligendi, laudantium iste. Omnis
-            soluta consequatur sequi sint, quia enim obcaecati quibusdam.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Qui adipisci, commodi fuga delectus ex rem nulla,
-            cupiditate corrupti eligendi, laudantium iste. Omnis
-            soluta consequatur sequi sint, quia enim obcaecati quibusdam.
+          In lots of ways, 2022 is a golden age of automotive performance. In the 1990s, 290 horsepower 
+          was muscle car territory, now you can get that in a Hyundai Sonata. A Tesla Model S
+           Plaid can rocket to 60 mph in speeds only Formula One and NHRA drag racers enjoyed a
+            generation ago. In this environment, however, conventional sports cars have become a 
+            rarified breed, and even harder to find at affordable prices. In 2021, dedicated 
+            enthusiast cars made up just 1.45% of the new-car market, according to data from Motor Intelligence.
           </p>
 
           </div>

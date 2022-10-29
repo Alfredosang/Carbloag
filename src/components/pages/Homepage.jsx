@@ -6,12 +6,14 @@ import Youtube from '../Youtube'
 import Parallax from '../Parallaxdemo'
 import Team from '../Team'
 import Contact from '../Contact'
+import FilterSection from '../FilterSection'
 
 const Homepage = ({post}) => {
   return (
     <div>
         <Hero />
-        <Blogpost post={post} />
+        <FilterSection />
+        {/* <Blogpost post={post} /> */}
         <Youtube />
         <Gallery />
         <Team />

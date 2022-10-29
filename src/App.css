@@ -7,6 +7,12 @@ body{
   background-color: rgb(31, 28, 28);
 }
 
+ .details{
+  background-color: black;
+ } 
+   
+
+
 .theme{
   color: rgb(0, 0, 0);
 }
