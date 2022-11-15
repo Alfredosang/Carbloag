@@ -1,9 +1,37 @@
+import { useAnimation, motion } from 'framer-motion';
 import React from 'react'
 // import carpic from '../assets/heropic.jpg'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 // import carpics from '../assets/pictwo.jpg'
+import { useInView } from 'react-intersection-observer';
+
 
 const FilterSection = () => {
+    const { ref, inView} = useInView({
+        threshold:0.2
+    });
+
+    const animation = useAnimation();
+
+    useEffect(()=>{
+        if(inView){
+            animation.start({
+                x: 0, opacity:1,
+                transition: {
+                 type: 'spring', duration: 2,
+                }
+            })
+        }
+        if(!inView){
+            animation.start({
+                x: '100vw', opacity: 0,
+                transition: {
+                    type: 'spring', duration: 0.5,
+                   }
+            })
+        }
+
+    })
     
     const car = [
         {
@@ -95,7 +123,7 @@ const FilterSection = () => {
 
     return (
         <div>
-            <div className="container mx-auto">
+            <div ref={ref} className="container mx-auto">
                 <div className='flex flex-col justify-center items-center p-5 space-y-5'>
                     <div className='flex  items-center justify-center space-x-1 md:space-x-5'>
                     <button type='button' onClick={() => setCars(car)}  className='bg-theme w-20 md:w-24 h-10 hover:scale-105 duration-200 shadow-sm shadow-black hover:bg-black text-white   px-3 rounded-full'>All</button>    
@@ -106,16 +134,18 @@ const FilterSection = () => {
                     </div>
 
                     <div>
-                        <div className='flex flex-wrap justify-center gap-2'>
+                        <motion.div 
+                        animate={animation}
+                         className='flex flex-wrap justify-center gap-2'>
                             {
                                 cars.map(({ id, pix }) => (
                                     <div key={id}>
-                                        <img src={pix} alt='car pix' className='w-[500px] h-[300px] object-cover object-center' />
+                                        <img src={pix} alt='car pix' className='w-[400px] h-[200px] object-cover object-center' />
 
                                     </div>
                                 ))
                             }
-                        </div>
+                        </motion.div>
 
                     </div>
 

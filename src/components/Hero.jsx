@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 // import Typical from 'react-typical'
 
 function Hero() {
@@ -24,7 +25,7 @@ function Hero() {
 
                             </div>
                         </div>
-                        <div className=' text-white md:hidden z-50' onClick={() => setNav(!nav)}>{!nav? <FaBars size={30} /> : <FaTimes size={30} />}</div>
+                        <div className=' text-white md:hidden z-50' onClick={() => setNav(!nav)}>{!nav ? <FaBars size={30} /> : <FaTimes size={30} />}</div>
 
                         <div className={`text-theme text-2xl bg-black w-full  h-screen  left-0 ${nav ? 'top-0' : '-top-full'}  flex flex-col items-center  justify-center absolute duration-500 space-y-7 p-24`}>
                             <div><h1 className='text-theme text-4xl hover:scale-105'>Gallery</h1></div>
@@ -41,11 +42,19 @@ function Hero() {
                     </div>
                     <div className='hero-text flex flex-col items-center justify-center '>
 
-                        <h1 className='flex text-center justify-center ml-5 mr-5 text-[3rem] md:text-[7rem]'>You Like It ?</h1>
-                        <h1 className='flex text-center text-theme justify-center ml-5 mr-5 text-[2rem] md:text-[5rem]'>
-                            You order, we deliver
+                        <motion.h1
+                            initial={{ x: '100vh', opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ type: 'spring', delay: 0.5, duration:2 }}
+                            className='flex text-center justify-center ml-5 mr-5 text-[3rem] md:text-[7rem]'>You Like It ?</motion.h1>
+                        <motion.h1
+                            initial={{ x: '-100vh', opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ type: 'spring', delay: 1.5 }}
+                            className='flex text-center text-theme justify-center ml-5 mr-5 text-[2rem] md:text-[5rem]'>
+                            You order, we deliver...
                             {/* <Typical steps={['You place an order', 2000, 'We deliver', 2000]} loop={Infinity} wrapper="p" /> */}
-                        </h1>
+                        </motion.h1>
 
 
                     </div>
